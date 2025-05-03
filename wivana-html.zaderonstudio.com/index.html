@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Utkala Arts</title>
+  <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+  <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="lib/css/fontawesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="lib/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/border.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+</head>
+
+<body style="background-image: url('../img/utkalabackground.jpeg');">
+  <!-- BG Hero Start -->
+  <div class="bg-hero">
+    <div class="overlay-hero">
+      <!-- Navbar Start -->
+      <div class="container d-none d-lg-flex justify-content-between border-hero">
+        <div class="d-flex gap-2 py-2">
+          <a href="#" class="icon-circle-32 share" data-share-to="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icon-circle-32 share" data-share-to="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="icon-circle-32 share" data-share-to="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" class="icon-circle-32 share" data-share-to="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div id="alert-container"></div>
+        <div class="d-flex gap-3 align-items-center justify-content-center lato c-white">
+          <div>
+            <i class="fa-regular fa-envelope fs-16"></i><span class="ms-2 fs-13"><a href="/cdn-cgi/l/email-protection"
+                style="color: white">utkalaa8@gmail.com</a></span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone me-2 fs-16"></i><span class="fs-13">+91 8291048850</span>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark lato">
+        <div class="container-lg d-flex">
+          <a class="navbar-brand ms-0 ms-sm-3 ms-lg-0" href="index.html">
+            <img src="img/utkalartsnewlogo.png" alt="Brand Logo" width="166" height="60"
+              class="d-inline-block align-text-top" />
+          </a>
+
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true"
+            aria-labelledby="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-lg-flex justify-content-center">
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link active" href="gallery.html">Gallery</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" href="#offerings">Offerings</a>
+                </li> -->
+                <li class="nav-item dropdown show">
+                  <a class="nav-link" href="offerings.html" role="button">
+                    Offerings
+                  </a>
+                  <!-- <div class="dropdown-menu show" aria-labelledby="offeringsDropdown">
+                    <a class="dropdown-item" href="#">Online Classes</a>
+                    <a class="dropdown-item" href="#">Workshop</a>
+                  </div> -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <button
+                      class="nav-link"
+                      id="serviceDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Services
+                      <i class="fa-solid fa-angle-down ms-1"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                            <li>
+                                <a class="dropdown-item" href="services.html">Services</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="services-detail.html"
+                          >Service Detail</a
+                        >
+                      </li>
+                    </ul>
+                  </li> -->
+                <!-- <li class="nav-item dropdown">
+                    <button
+                      class="nav-link"
+                      id="pagesDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Pages
+                      <i class="fa-solid fa-angle-down ms-1"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                      <li>
+                        <a class="dropdown-item" href="team.html">Team</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="packages.html">Packages</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="our-process.html"
+                          >Our Process</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="faqs.html">FAQS</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="testimonials.html">Testimonials</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="blog-post.html"
+                          >Blog Post</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="single-post.html"
+                          >Single Post</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="404-page.html"
+                          >404 Page</a
+                        >
+                      </li>
+                    </ul>
+                  </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="d-none d-lg-flex">
+            <!-- <a href="contact.html" class="btn-light"> Make Appointment </a> -->
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Section Start -->
+      <!-- <section class="section-m mx-auto container-lg"> -->
+      <div class="c-white mb-4 mb-lg-0 fade-in">
+        <!-- <div style="text-align: center;"> -->
+          <!-- <span class="icon-circle-17"><i class="fa-solid fa-plus"></i></span> -->
+          <!-- <span
+            class="ms-2 philosopher fs-14">A Sacred Space for Art, Healing & Inner Harmony</span>
+        </div> -->
+        <h1 class="tt-uppercase fc-white title animate slideInDown hidden text-center mt-5">
+          Discover Mindful Living and Artistic Expression at Utkalaa Arts
+        </h1>
+        <div style="text-align: center;">
+          <!-- <span class="icon-circle-17"><i class="fa-solid fa-plus"></i></span> -->
+          <span
+            class="ms-2 philosopher fs-14">A Sacred Space for Art, Healing & Inner Harmony</span>
+        </div>
+        <!-- <div class="c-white mb-4 mb-lg-0 fade-in text-center mt-5">
+          <p style="padding-left: 500;">
+            Join us for a unique experience where art meets soul and every creation becomes a step towards harmony and
+            healing.
+          </p>
+      <div class="d-block d-lg-flex gap-4 lato c-white fade-in">
+          <a href="#footer" class="btn-light mb-3 mb-lg-0">
+            Contact Us
+          </a>
+        </div> -->
+        <!-- <div class="d-flex gap-4 mt-4">
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="img/testimonial-1.jpg"
+                    class="testimonial-circle-first"
+                    alt="testimonial"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/testimonial-2.jpg"
+                    class="testimonial-circle"
+                    alt="testimonial"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/testimonial-3.jpg"
+                    class="testimonial-circle"
+                    alt="testimonial"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/wivana-testi.png"
+                    class="testimonial-circle"
+                    alt="testimonial"
+                  />
+                </div>
+              </div>
+             <div>
+                <p class="hero-subtext">
+                  99% of customer enjoy total satisfaction
+                </p>
+              </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="d-block d-lg-flex gap-5 content-m">
+            <div class="form-container fade-in">
+              <form
+                action="#"
+                class="d-block d-lg-flex gap-4 align-items-center justify-content-between"
+              >
+                <div class="mb-3">
+                  <label for="name" class="c-white philosopher fs-14"
+                    >YOUR NAME</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="c-white philosopher fs-14"
+                    >YOUR NUMBER</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Your Number"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="date" class="c-white philosopher fs-14"
+                    >Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control date"
+                    id="date"
+                    required
+                  />
+                </div>
+                <div>
+                  <button class="btn-light mt-3">Book Now</button>
+                </div>
+              </form>
+            </div>
+            <div
+              class="d-flex align-items-end c-text lato gap-3 mt-3 mt-lg-0 fade-in"
+            >
+              <div>Relaxation</div>
+              <div>Meditation</div>
+              <div>Ayurvedic</div>
+            </div>
+          </div> -->
+      </section>
+      <!-- Hero Section End -->
+    </div>
+  </div>
+  <!-- BG Hero End -->
+  <!-- About Start -->
+  <div class="bg-subtle w-100" id="about" style="text-align: center;">
+    <div class="width-base">
+      <div>
+        <div>
+          <!-- <div class="col px-0 order-1 order-lg-0 fade-in px-3 py-0"> -->
+            <!-- <div class="row row-cols-1 row-cols-sm-2 g-3">
+              <div class="col d-flex flex-column gap-3"> -->
+                <!-- <div>
+                    <img
+                      src="img/drawing-art.jpeg"
+                      alt="treatment"
+                      class="img-about"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/drawing-artist.jpeg"
+                      alt="treatment"
+                      class="img-about"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <img
+                      src="img/utkala-drawing.jpeg"
+                      alt="treatment"
+                      class="img-about-last"
+                    />
+                  </div> -->
+              <!-- </div>
+            </div> -->
+          <!-- </div> -->
+          <div class="col d-flex flex-column justify-content-between gap-4 px-3 py-0 ps-lg-5 pt-5 pt-lg-0 fade-in">
+            <div>
+              <!-- <div>
+                  <span class="icon-circle-17-main"
+                    ><i class="fa-solid fa-plus c-main"></i
+                  ></span>
+                            <span class="ms-2 philosopher fs-14 c-main">ABOUT US</span>
+                        </div> -->
+              <div class="title-about c-semi-black mt-4">
+                A Sanctuary for Creative Healing and Inner Calm
+              </div>
+            </div>
+            <span class="text-grey">At Utkalaa Arts, we blend the meditative power of traditional art with mindful
+              expression—helping you find peace, presence, and emotional renewal through creativity.
+              <strong>Founded by Bismita Aruk</strong>, a passionate & professional traditional artist, art educator,
+              art therapy practitioner and meditation guide. Utkalaa Arts was born from years of personal exploration,
+              cultural reverence and the desire to help others connect with their inner selves through art.
+            </span>
+            <div>
+              <!-- <div class="d-flex align-items-center my-3">
+                <span class="icon-circle-37-main me-3"><i class="fa-solid fa-check"></i></span>
+              </div> -->
+              <div>
+                <span class="text-subtitle c-semi-black my-4">Artistic Healing</span>
+                <br />
+                <p class="text-grey my-3" style="text-align: center;">
+                  Learn, create, and express through heritage art forms rooted in mindfulness and joy.
+                </p>
+              </div>
+               <div>
+                <span class="text-subtitle c-semi-black my-4">Mindful Exploration</span>
+                <br />
+                <p class="text-grey my-3">
+                  Discover the stillness within through artistic practice designed to soothe, ground, and inspire.
+                </p>
+              </div>
+            </div>
+            <div>
+              <!-- <div class="d-flex align-items-center my-3">
+                <span class="icon-circle-37-main me-3"><i class="fa-solid fa-check"></i></span>
+              </div> -->
+              <div>
+                <span class="text-subtitle c-semi-black my-4">Mindful Exploration</span>
+                <br />
+                <p class="text-grey my-3">
+                  Discover the stillness within through artistic practice designed to soothe, ground, and inspire.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+  <!-- CEO Quote Start -->
+
+  <!-- CEO Quote End -->
+  <!-- Our Process Start -->
+  <!-- <div class="bg-subtle w-100 position-relative large-padding">
+    <div class="width-base"> -->
+      <!-- <div class="fade-in">
+          <div>
+            <span class="icon-circle-17-main"
+              ><i class="fa-solid fa-plus c-main"></i
+            ></span>
+                <span class="ms-2 philosopher fs-14 c-main">OUR PROCESS</span>
+            </div>
+            <div class="title-about c-semi-black mt-4">
+                Holistic Steps to Wellness and Healing
+            </div>
+        </div> -->
+      <!-- <div class="container px-0 my-0">
+            <div class="row row-cols-1 row-cols-lg-4 g-3">
+                <div class="col fade-in">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="text-subtitle c-semi-black c-main">01</p>
+                            <p class="text-subtitle c-semi-black">Initial Consultant</p>
+                            <p class="text-grey">
+                                Your journey begins with a personalized consultation where we assess your health
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col fade-in" data-delay="100">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="text-subtitle c-semi-black c-main">02</p>
+                            <p class="text-subtitle c-semi-black">Customized Plan</p>
+                            <p class="text-grey">
+                                Based on your dosha (body constitution) and consultation, we create a tailored plan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col fade-in" data-delay="200">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="text-subtitle c-semi-black c-main">03</p>
+                            <p class="text-subtitle c-semi-black">Therapeutic Sessions</p>
+                            <p class="text-grey">
+                                Experience our diverse range of treatments, including massages, detox therapies, and wellness
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col fade-in" data-delay="300">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="text-subtitle c-semi-black c-main">04</p>
+                            <p class="text-subtitle c-semi-black">Ongoing Support</p>
+                            <p class="text-grey">
+                                We provide continuous guidance and support throughout your wellness
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- </div>
+  </div> -->
+  <!-- Our Process End -->
+  <!-- Why Choose Us Start -->
+  <div class="bg-darker position-relative">
+    <div class="bg-choose-us width-base position-relative position-lg-absolute choose-position">
+      <div class="fade-in">
+        <div class="d-flex justify-content-center">
+          <span class="icon-circle-17"><i class="fa-solid fa-plus"></i></span>
+          <span class="ms-2 philosopher fs-14 c-white">WHY UTKALAA ARTS</span>
+        </div>
+        <div class="title-about mt-1 mb-5 c-white w-80 mx-auto text-center">
+          The Ultimate Artistics Wellness Experience
+        </div>
+      </div>
+      <div class="container px-0">
+        <div class="row row-cols-1 row-cols-md-3 fade-in p-5">
+          <div class="col d-flex flex-column align-items-center border-bottom border-lg-right border-white">
+            <div class="mt-4">
+              <img src="img/icons-UGGEC4D_4.png" width="52" height="52" alt="choose" />
+            </div>
+            <p class="text-subtitle c-white mt-3">Rooted in Tradition</p>
+            <p class="text-white text-center m-0 mb-lg-4">
+              Authentic Indian & Tibettan art forms, taught with soul and purpose.
+            </p>
+          </div>
+          <div class="col d-flex flex-column align-items-center border-bottom border-white">
+            <div class="mt-4">
+              <img src="img/icons-UGGEC4D_9.png" width="52" height="52" alt="choose" />
+            </div>
+            <p class="text-subtitle c-white mt-3">Mandala & Meditative Art</p>
+            <p class="text-white text-center m-0 mb-lg-4">
+              Sacred patterns that calm the mind and awaken creativity
+            </p>
+          </div>
+          <div class="col d-flex flex-column align-items-center border-lg-left border-bottom border-white">
+            <div class="mt-4">
+              <img src="img/icons-UGGEC4D_5.png" width="52" height="52" alt="choose" />
+            </div>
+            <p class="text-subtitle c-white mt-3">Mental Wellness Through Art</p>
+            <p class="text-white text-center m-0 mb-lg-4">
+              Gentle, expressive practices that support emotional well-being.
+
+            </p>
+          </div>
+          <div
+            class="col d-flex flex-column align-items-center border-lg-right border-bottom border-lg-bottom-0 border-white">
+            <div class="mt-4">
+              <img src="img/icons-UGGEC4D_6.png" width="52" height="52" alt="choose" />
+            </div>
+            <p class="text-subtitle c-white mt-3">Meditation & Breathwork</p>
+            <p class="text-white text-center m-0">
+              Mind-body practices to ground, relax, and restore balance.
+            </p>
+          </div>
+          <div class="col d-flex flex-column align-items-center border-bottom border-lg-bottom-0">
+            <div class="mt-4">
+              <img src="img/icons-UGGEC4D_7.png" width="52" height="52" alt="choose" />
+            </div>
+            <p class="text-subtitle c-white mt-3">Custom Workshops</p>
+            <p class="text-white text-center m-0">
+              Designed for individuals, groups, or organizations — online or offline.
+            </p>
+          </div>
+          <div
+            class="col d-flex flex-column align-items-center border-lg-left border-bottom border-lg-bottom-0 border-white">
+            <div class="mt-4">
+              <img src="img/icons-UGGEC4D_8.png" width="52" height="52" alt="choose" />
+            </div>
+            <p class="text-subtitle c-white mt-3">Led by a Professional Practitioner</p>
+            <p class="text-white text-center m-0">
+              Guided by a professional artist, Art Educator and meditation teacher.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="width-base partner-margin fade-in">
+            <p class="text-silver text-center">
+                Trusted by Leading Brands – Delivering Wellness Excellence Through Proven Partnerships
+            </p>
+            <div class="swiper-container mt-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/logo-1.png" alt="Logo 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-2.png" alt="Logo 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-3.png" alt="Logo 3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-4.png" alt="Logo 4" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-5.png" alt="Logo 5" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-6.png" alt="Logo 6" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-7.png" alt="Logo 7" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-8.png" alt="Logo 8" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/logo-9.png" alt="Logo 9" />
+                    </div>
+                </div>
+            </div>
+        </div> -->
+  </div>
+  <!-- Why Choose Us End -->
+  <!-- Our Service Start -->
+  <!-- <div class="bg-subtle w-100" id="offerings">
+    <div class="width-base">
+      <div class="row row-cols-1 row-cols-sm-2 g-3 align-items-end mb-5">
+        <div>
+          <div class="fade-in">
+            <span class="icon-circle-17-main"><i class="fa-solid fa-plus c-main"></i></span>
+            <span class="ms-2 philosopher fs-14 c-main">OUR OFFERINGS</span>
+          </div>
+          <div class="title-about c-semi-black fade-in">
+            Creative Expression. Inner Healing. Mindful Living.
+          </div>
+        </div>
+        <div class="text-grey fade-in">
+          We offer a unique blend of traditional artistry, therapeutic practices and meditative techniques, carefully
+          curated to support emotional well-being and inner peace. All services are available <strong>online or
+            in-person</strong> based on individual, group or organizational needs
+        </div>
+      </div>
+      <div>
+        <div class="bg-service-1 mb-4 fade-in">
+          <div class="custom-card">
+            <div class="card-body bg-semi-white">
+              <div>
+                <p class="text-subtitle c-semi-black">Teaching Online classes for Traditional Art of Tibet & India</p>
+                <p class="text-grey">
+                  Learn sacred and cultural art forms from India and Tibet such as Basic Thangka, Pichwai, Saura &
+                  advanced Mandala art in structured online classes. Each traditional style offers not just technique
+                  but a meditative journey through culture and inner stillness.
+
+                </p>
+              </div> -->
+              <!-- <div class="d-flex justify-content-between align-items-start border-top pt-3">
+                                <div class="lato c-semi-black fs-18">$125/session</div>
+                                <div>
+                                    <a href="services-detail.html" class="btn-dark">
+                      Learn More
+                    </a>
+                                </div>
+                            </div> -->
+            <!-- </div>
+          </div>
+        </div>
+        <div class="bg-service-2 mb-4 fade-in">
+          <div class="custom-card">
+            <div class="card-body bg-semi-white">
+              <div>
+                <p class="text-subtitle c-semi-black">Creative Art Therapy Based Healing workshop</p>
+                <p class="text-grey">
+                  A gentle, expressive approach to emotional wellness through art. These sessions offer a safe space to
+                  explore feelings, release inner blocks, and support healing using color, form and creativity as
+                  therapeutic tools.Ideal for stress, anxiety, emotional overwhelm or simply reconnecting with yourself.
+                </p>
+              </div> -->
+              <!-- <div class="d-flex justify-content-between align-items-start border-top pt-3">
+                                <div class="lato c-semi-black fs-18">$125/session</div>
+                                <div>
+                                    <a href="services-detail.html" class="btn-dark">
+                      Learn More
+                    </a>
+                                </div>
+                            </div> -->
+            <!-- </div>
+          </div>
+        </div>
+        <div class="bg-service-3 mb-4 fade-in">
+          <div class="custom-card">
+            <div class="card-body bg-semi-white">
+              <div>
+                <p class="text-subtitle c-semi-black">Mandala & Meditative Art workshops</p>
+                <p class="text-grey">
+                  Experience the calming power of mandalas sacred circular patterns that promote mindfulness, focus and
+                  emotional balance. These sessions blend intuitive art making with meditative stillness, helping you
+                  reconnect with your inner self.No artistic experience needed just an open heart and a willingness to
+                  explore.
+                </p>
+              </div> -->
+              <!-- <div class="d-flex justify-content-between align-items-start border-top pt-3">
+                                <div class="lato c-semi-black fs-18">$125/session</div>
+                                <div>
+                                    <a href="services-detail.html" class="btn-dark">
+                      Learn More
+                    </a>
+                                </div>
+                            </div> -->
+            <!-- </div>
+          </div>
+        </div>
+        <div class="bg-service-4 mb-4 fade-in">
+          <div class="custom-card">
+            <div class="card-body bg-semi-white">
+              <div>
+                <p class="text-subtitle c-semi-black">Breathwork & Mindfulness Practices</p>
+                <p class="text-grey">
+                  Learn a variety of breathing techniques like deep belly breathing, alternate nostril (Nadi Shodhana)
+                  and box breathing to calm the nervous system and center the mind.Our meditation sessions include
+                  mindfulness, Vipassana,body scan & visualization designed to cultivate presence, emotional clarity and
+                  inner peace.Each session is gently guided and accessible to all levels
+                </p>
+              </div> -->
+              <!-- <div class="d-flex justify-content-between align-items-start border-top pt-3">
+                                <div class="lato c-semi-black fs-18">$125/session</div>
+                                <div>
+                                    <a href="services-detail.html" class="btn-dark">
+                      Learn More
+                    </a>
+                                </div>
+                            </div> -->
+            <!-- </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Our Service End -->
+  <!-- Testimonial Start -->
+  <div class="bg-subtle w-100">
+    <div class="width-base pt-0">
+      <div class="container px-0 mx-0 mx-auto">
+        <div class="row row-cols-1 row-cols-sm-2 g-3 align-items-end mb-5 fade-in">
+          <div>
+            <div>
+              <span class="icon-circle-17-main"><i class="fa-solid fa-plus c-main"></i></span>
+              <span class="ms-2 philosopher fs-14 c-main">TESTIMONIALS</span>
+            </div>
+            <div class="title-about c-semi-black">What Our Customer Say</div>
+          </div>
+          <div class="d-flex justify-content-end align-items-end">
+            <!-- <a href="testimonials.html" class="btn-dark mt-3">
+                More Testimonial
+              </a> -->
+          </div>
+        </div>
+        <div>
+          <div class="row row-cols-1 row-cols-sm-2 g-3">
+            <div class="col fade-in">
+              <div class="custom-card-1 position-static">
+                <div class="card-body bg-semi-white">
+                  <div>
+                    <p class="text-grey">
+                      I am extremely lucky to own one of the first Buddha paintings by Bismita Aruk. The serenity of the
+                      meditating Buddha is captured in white paint on a black canvas. It creates a profound sense of
+                      peace and stillness as if the painting is guiding the mind to be quiet and meditative. She is
+                      inviting the observer to the spaces in between the white and black, in between light and shadow
+                      and let the mind do its trick. I believe, Bismita Aruk is a gifted artist who honed her skill over
+                      the years with her training tradition Tibetan painting aswell.
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-start pt-3">
+                    <div class="d-flex gap-2">
+                      <div>
+                        <img src="img/vijay-testimonial.jpeg" class="testimonial-circle" alt="testimonial" />
+                      </div>
+                      <div>
+                        <div class="fs-18 c-main lato">Vijay V
+                        </div>
+                        <div class="fs-13 lato c-semi-transparent">
+                          Head of Data Science, Nashville,US
+
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="icon/testi.svg" width="90" height="66" alt="testimonial quote" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in">
+              <div class="custom-card-1 position-static">
+                <div class="card-body bg-semi-white">
+                  <div>
+                    <p class="text-grey">
+                      "Working with Bismita to obtain several of her prints for a small import business idea of
+                      mine here in the U.S. has been an easy and straightforward process. She is very open
+                      to collaborating with her clients to help achieve their goals with her artwork. Our transaction
+                      process was relatively smooth, prints arrived immediately after ordering and her artwork speaks
+                      for itself of course!”
+
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-start pt-3">
+                    <div class="d-flex gap-2">
+                      <div>
+                        <img src="img/stephen-testimonial.jpeg" class="testimonial-circle" alt="testimonial" />
+                      </div>
+                      <div>
+                        <div class="fs-18 c-main lato">Stephen</div>
+                        <div class="fs-13 lato c-semi-transparent">
+                          Yoga teacher , Florida, USA
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="icon/testi.svg" width="90" height="66" alt="testimonial quote" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 g-3 mt-1">
+            <div class="col fade-in">
+              <div class="custom-card-1 position-static">
+                <div class="card-body bg-semi-white">
+                  <div>
+                    <p class="text-grey">
+                      It was an amazing session on 'Mandala Art,' which greatly benefited our teachers and therapists in
+                      working with our students of determination. This art therapy practice will help improve the
+                      attention and concentration of students with autism and intellectual disabilities. All our special
+                      educators and therapists have started practicing this.They are also benefiting from it by
+                      relieving stress, understanding their emotions, and embracing the art form.
+
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-start pt-3">
+                    <div class="d-flex gap-2">
+                      <!-- <div>
+                                                <img src="img/testimonial-3.jpg" class="testimonial-circle" alt="testimonial" />
+                                            </div> -->
+                      <div>
+                        <div class="fs-18 c-main lato">Irshad Adam</div>
+                        <div class="fs-13 lato c-semi-transparent">
+                          Principal, Al Ibtisama centre for people with disabilities, UAE
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="icon/testi.svg" width="90" height="66" alt="testimonial quote" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in">
+              <div class="custom-card-1 position-static">
+                <div class="card-body bg-semi-white">
+                  <div>
+                    <p class="text-grey">
+                      It’s my pleasure to share my experience with Bismita’s art. I’ve bought 5 of her paintings, and I
+                      deeply connected with each one. You can truly feel the calm, relaxed, and meditative energy in her
+                      work — it radiates positivity.
+                      I also participated in one of her meditative painting retreats and really enjoyed the process. It
+                      allowed me to express my feelings and emotions through colors on paper.
+                      Bismita herself is so calm, focused and full of peaceful energy. I truly appreciate her dedication
+                      and hardwork. Wishing her blessings and continued success in her beautiful journey
+
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-start pt-3">
+                    <div class="d-flex gap-2">
+                      <div>
+                        <img src="img/prem-tesimonial.jpeg" class="testimonial-circle" alt="testimonial" />
+                      </div>
+                      <div>
+                        <div class="fs-18 c-main lato">Prem Anand
+                        </div>
+                        <div class="fs-13 lato c-semi-transparent">
+                          Owner of Basho Resort , Goa , India
+
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="icon/testi.svg" width="90" height="66" alt="testimonial quote" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial End -->
+  <!-- Wellness Showcase Start -->
+  <!-- <div class="bg-subtle w-100">
+    <div class="width-base pt-3">
+      <div class="fade-in">
+        <div class="d-flex flex-column align-items-center">
+          <div>
+            <span class="icon-circle-17-main"><i class="fa-solid fa-plus c-main"></i></span>
+            <span class="ms-2 philosopher fs-14 c-main">ART GALLERY</span>
+          </div>
+          <div class="title-about c-semi-black">WELCOME TO UTKALAA ARTS</div>
+          <div class="subtext-showcase">
+            A sacred space where tradition meets intention, and creativity flows with calm. Here you’ll find a curated
+            collection of my artworks created with love, mindfulness, and devotion. Each piece is not just art — it’s an
+            invitation to pause, feel, and connect.
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 px-0">
+        <div class="row row-cols-1 row-cols-sm-3 g-3 fade-in">
+          <div class="col d-flex flex-column gap-3 px-3">
+            <div>
+              <img src="img/showcase-1.jpeg" alt="showcase" class="img-showcase" />
+            </div>
+            <div>
+              <img src="img/showcase-2.jpeg" alt="showcase" class="img-showcase" />
+            </div>
+          </div>
+          <div class="col d-flex flex-column gap-3 px-3">
+            <div>
+              <img src="img/showcase-3.jpeg" alt="showcase" class="img-showcase" />
+            </div>
+            <div>
+              <img src="img/showcase-4.jpeg" alt="showcase" class="img-showcase" />
+            </div>
+          </div>
+          <div class="col px-3">
+            <div>
+              <img src="img/showcase-5.jpeg" alt="showcase" class="last-img-showcase" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Wellness Showcase End -->
+  <!-- FAQS Start -->
+  <div class="bg-semi-white w-100">
+    <div class="width-base">
+      <div class="container px-0">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col fade-in pe-5">
+            <img src="img/faq.jpeg" alt="faqs" class="img-faqs" />
+          </div>
+          <div class="col fade-in ps-4">
+            <div>
+              <div>
+                <span class="icon-circle-17-main"><i class="fa-solid fa-plus c-main"></i></span>
+                <span class="ms-2 philosopher fs-14 c-main">FAQS</span>
+              </div>
+              <div class="title-about c-semi-black">
+                Frequently Asked Questions
+              </div>
+            </div>
+            <div class="accordion mt-5" id="wivanaAccordion">
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    What kind of art do you teach?
+
+                  </button>
+                </span>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    We offer traditional Indian and Tibetan art (like Thangka, Pichwai, Saura),Advanced Mandala art and
+                    therapeutic art sessions for emotional healing.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do I need to be good at art to join your workshops?
+
+                  </button>
+                </span>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    <strong> Not at all.</strong> All workshops are beginner-friendly and focus on the process, not the
+                    outcome. No prior experience is needed just a willingness to explore and express.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What is the difference between a regular art class and a therapeutic art session?
+
+                  </button>
+                </span>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    Art classes focus on skill and technique. Therapeutic art sessions are emotion-based, designed to
+                    help you express, reflect and heal guided with gentle support and intention.
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Are your workshops suitable for children or special needs groups?
+
+                  </button>
+                </span>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    Absolutely. We conduct inclusive, age-appropriate sessions and have experience working with
+                    <strong>children, neurodiverse individuals and therapy groups.</strong>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Can I attend your sessions online?
+
+                  </button>
+                </span>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    Yes! All our offerings — art, meditation, and breathwork — are available <strong>online and
+                      offline</strong> based on your preference and location.
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Do you offer 1:1 sessions?
+
+                  </button>
+                </span>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    Yes, we provide <strong>personalized one-on-one sessions </strong> for art therapy, guided
+                    meditation, and breathwork. These are tailored to individual needs and emotional well-being.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <span class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    How can I book a session or workshop?
+
+                  </button>
+                </span>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#wivanaAccordion">
+                  <div class="accordion-body">
+                    You can reach out through our <strong>Contact page </strong>or email us directly at
+                    utkalaa8@gmail.com or utkalaa8@gmail.com. Custom workshops for individuals, schools or organizations
+                    can also be arranged.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQS End -->
+  <!-- Blog Post Start -->
+  <!-- <div class="bg-subtle w-100">
+        <div class="width-base">
+            <div class="container px-0 mx-0 mx-auto">
+                <div class="row row-cols-1 row-cols-sm-2 g-3 align-items-end mb-5 fade-in">
+                    <div>
+                        <div>
+                            <span class="icon-circle-17-main"><i class="fa-solid fa-plus c-main"></i
+                ></span>
+                            <span class="ms-2 philosopher fs-14 c-main">BLOG POST</span>
+                        </div>
+                        <div class="title-about c-semi-black">
+                            Latest Articles From Wivana
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <a href="blog-post.html" class="btn-dark mt-3"> More Articles </a>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 g-3">
+                    <div class="col fade-in">
+                        <div class="custom-card-2">
+                            <div class="card-body p-0 bg-semi-white">
+                                <div class="overflow-hidden">
+                                    <img src="img/blog-post-1.jpg" alt="blog post" class="img-blog-post" />
+                                </div>
+                                <div class="px-3 py-3">
+                                    <div>
+                                        <p class="text-subtitle c-semi-black">
+                                            Inner Harmony Awaits
+                                        </p>
+                                        <p class="text-grey">
+                                            Inner Harmony Awaits October 16, 2024 | 0 comment Donec…
+                                        </p>
+                                    </div>
+                                    <a href="single-post.html" class="lato c-main fs-15 learn-link">Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in">
+              <div class="custom-card-2">
+                <div class="card-body p-0 bg-semi-white">
+                  <div class="overflow-hidden">
+                    <img
+                      src="img/blog-post-2.jpg"
+                      alt="blog post"
+                      class="img-blog-post"
+                    />
+                  </div>
+                  <div class="px-3 py-3">
+                    <div>
+                      <p class="text-subtitle c-semi-black">
+                        Relax and Rejuvenate
+                      </p>
+                      <p class="text-grey">
+                        Relax and Rejuvenate October 16, 2024 | 0 comment Donec…
+                      </p>
+                    </div>
+                    <a
+                      href="single-post.html"
+                      class="lato c-main fs-15 learn-link"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in">
+              <div class="custom-card-2">
+                <div class="card-body p-0 bg-semi-white">
+                  <div class="overflow-hidden">
+                    <img
+                      src="img/blog-post-3.jpg"
+                      alt="blog post"
+                      class="img-blog-post"
+                    />
+                  </div>
+                  <div class="px-3 py-3">
+                    <div>
+                      <p class="text-subtitle c-semi-black">
+                        Customized Ayurvedic Therapies
+                      </p>
+                      <p class="text-grey">
+                        Customized Ayurvedic Therapies October 16, 2024 | 0
+                        comment Donec…
+                      </p>
+                    </div>
+                    <a
+                      href="single-post.html"
+                      class="lato c-main fs-15 learn-link"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- Blog Post End -->
+  <!-- Footer Start -->
+  <div class="bg-darker w-100" id="footer">
+    <div class="width-base">
+      <div class="container px-0 footer-padding">
+        <div class="row row-cols-1 row-cols-lg-2 g-3">
+          <div class="col">
+            <div>
+              <a href="index.html">
+                <img src="img/utkalartsnewlogo.png" alt="wivana logo" class="footer-logo" />
+              </a>
+            </div>
+            <div class="my-4">
+              <div class="text-silver subtext-footer">
+                Embrace the power of Art Healing to restore, balance, revitalize your spirit.
+              </div>
+            </div>
+            <div class="d-flex gap-2 py-2">
+              <span class="icon-circle-32 bg-grey">
+                <i class="fa-brands fa-facebook-f share" data-share-to="facebook"></i>
+              </span>
+              <span class="icon-circle-32 bg-grey share" data-share-to="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+              <span class="icon-circle-32 bg-grey share" data-share-to="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span class="icon-circle-32 bg-grey share" data-share-to="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-end align-items-end">
+            <form class="newsletter-container" id="newsletterForm">
+              <h3 class="text-subtitle c-white">Newsletter</h3>
+              <div class="popup-message" id="popupMessage">
+                <div>
+                  <i class="fa-solid fa-check fa-2xl"></i>
+                </div>
+                Thank you! The form submitted successfully
+              </div>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Your Email" class="email-input" />
+                <button type="submit" class="btn-newsletter">
+                  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 207.99" width="32" height="15">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #fff;
+                          stroke-width: 0px;
+                        }
+                      </style>
+                    </defs>
+                    <path class="cls-1"
+                      d="M504.66,85.8L422.97,4.11c-5.48-5.48-14.36-5.48-19.83,0-5.48,5.48-5.48,14.36,0,19.83l66.02,66.02H162.65c-7.75,0-14.03,6.27-14.03,14.03s6.27,14.03,14.03,14.03h305.63l-66.05,66.02c-5.48,5.48-5.48,14.36,0,19.83,2.74,2.74,6.33,4.11,9.92,4.11s7.18-1.37,9.92-4.11l82.6-82.57c9.78-9.78,9.78-25.72,0-35.51Z" />
+                    <path class="cls-1"
+                      d="M120.87,89.97H14.03c-7.75,0-14.03,6.27-14.03,14.03s6.27,14.03,14.03,14.03h106.84c7.75,0,14.03-6.27,14.03-14.03s-6.27-14.03-14.03-14.03Z" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-4">
+            <h3 class="text-subtitle c-white mb-4">Working Hour</h3>
+            <p class="text-silver mb-4">
+              Our Doors Are Open for Your Healing Journey
+            </p>
+            <div class="mb-2">
+              <i class="fa-regular fa-clock" style="color: #c7c7c7"></i>
+              <span class="text-silver">Monday - Sunday: 9:00 AM - 8:00 PM</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-clock" style="color: #c7c7c7"></i>
+              <span class="text-silver">Sat - Sun : 8:00AM - 5:00PM</span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div>
+              <h3 class="text-subtitle c-white mb-3 mb-lg-4 mt-5 mt-lg-0">
+                Address
+              </h3>
+              <div>
+                <p class="text-silver pe-5">
+                  Al Majaj, Buheira Corniche,
+
+                  Sharjah, UAE
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-subtitle c-white my-4">Contact</h3>
+              <div>
+                <!-- <p class="text-silver my-0">+1(234)567890</p> -->
+                <p class="text-silver">email : <a href="/cdn-cgi/l/email-protection"
+                    style="color: white">utkalaa8@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-1"></div>
+          <!-- <div class="col-12 col-lg-2">
+                                <h3 class="text-subtitle c-white mb-0 mb-lg-4 mt-5 mt-lg-0">
+                                    Explore
+                                </h3>
+                                <ul class="footer-links">
+                                    <li>
+                                        <a href="index.html" class="text-silver footer-link">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html" class="text-silver footer-link">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="packages.html" class="text-silver footer-link">Packages</a
+                  >
+                </li>
+                <li>
+                  <a href="faqs.html" class="text-silver footer-link">FAQS</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html" class="text-silver footer-link">Services</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html" class="text-silver footer-link">Team</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-2">
+                                <h3 class="text-subtitle c-white mb-0 mb-lg-4 mt-5 mt-lg-0">
+                                    Navigation
+                                </h3>
+                                <ul class="footer-links">
+                                    <li>
+                                        <a href="index.html" class="text-silver footer-link">Documentation</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html" class="text-silver footer-link"
+                    >Privacy</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="text-silver footer-link"
+                    >Therapy</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="text-silver footer-link"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="blog-post.html" class="text-silver footer-link"
+                    >Blog Post</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html" class="text-silver footer-link"
+                    >Cookies</a
+                  >
+                </li>
+              </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer End -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="lib/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/js/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

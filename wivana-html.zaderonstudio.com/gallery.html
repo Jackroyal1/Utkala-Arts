@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+<!-- style="background-image: url(img/pink-lotus-impressionist-landscape-oil-on-board.jpg); background-repeat: no-repeat;" -->
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container text-center" style="padding: 10px; background-color: black; opacity: 0.5;">
+          <a class="navbar-brand mx-auto" href="index.html">
+            <img src="img/utkalartsnewlogo.png" alt="Brand Logo" width="166" height="60"
+              class="d-inline-block align-text-top" style="padding-left: 44%;" />
+          </a>
+        </div>
+      </nav>
+      
+    <h1 style="text-align: center; padding: 20px; text-decoration: underline;" class="title-about c-semi-black">Art Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="img/showcase-1.jpeg" alt="showcase" class="img-showcase" />
+        </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="img/showcase-2.jpeg" alt="showcase" class="img-showcase" />
+          </div>
+    </div>
+    <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/showcase-3.jpeg" alt="showcase"/>
+          </div>
+          </div>
+          <div class="gallery-container">
+        <div class="gallery-item">
+            <img  src="img/showcase-5.jpeg" alt="Image 4">
+        </div>
+    </div>
+</body>
+</html>
